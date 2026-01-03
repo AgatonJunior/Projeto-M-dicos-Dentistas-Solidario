@@ -1,0 +1,138 @@
+Footer {
+    background-color: #0B0B0B;
+    padding: 1.5rem 4rem;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem 4rem;
+
+    .boxFooterLogo {
+
+        width: 280px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+
+        p {
+            display: flex;
+            align-items: flex-start;
+            text-align: start;
+            margin: 0;
+            padding-top: 10px;
+        }
+    }
+
+    img {
+        width: 30px;
+        height: auto;
+    }
+
+    a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: #FFFFFF;
+        gap: 0.5rem;
+        font-weight: bold;
+
+    }
+
+    .contato {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        width: 210px;
+        gap: 10px;
+        margin-bottom: 1rem;
+
+        img {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            width: 20px;
+            height: auto;
+        }
+
+        .email,
+        .telefone,
+        .endereco {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            margin-bottom: .6rem;
+        }
+
+        
+    }
+    
+    .boxFooter {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10rem;
+        
+        
+        h4 {
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        
+        p {
+            
+            margin: 0;
+            font-size: 0.775rem;
+            font-weight: 300;
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .social p {
+            font-size: .8rem;
+            margin: .2rem 0;
+            padding: 0.2rem 0;
+        }
+    }
+
+    
+    p.copyright {
+        display: flex;
+        text-align: center;
+        width: 85vw;
+        padding: 2rem 25rem 0rem 25rem;
+        border-top: solid 2px #000000;
+        margin-top: 1.5rem;
+        font-size: 0.705rem;
+        font-weight: 300;
+    }
+
+}
+@media (max-width: 900px) {
+    Footer {
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        .boxFooter {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        p.copyright {
+            padding: 1rem 5rem 0rem 5rem;
+            font-size: 0.65rem;
+        }
+    }
+}

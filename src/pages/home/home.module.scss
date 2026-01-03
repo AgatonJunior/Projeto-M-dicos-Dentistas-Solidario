@@ -1,0 +1,164 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    gap: 3rem;
+
+    .content {
+        max-width: 450px;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1.5rem 0;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .text {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.boxButton {
+    display: flex;
+    gap: 1rem;
+
+    a {
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        background-color: #00745a;
+        color: white;
+        font-weight: 500;
+
+        &:hover {
+            background-color: #02634c;
+        }
+
+        &:nth-child(2) {
+            border: solid 2px #00745a;
+            background-color: white;
+            color: #00745a;
+        }
+    }
+}
+
+.imgMedico {
+    img {
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .imgMedico {
+        img {
+            width: 40vw;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .imgMedico {
+        img {
+            display: none;
+        }
+    }
+}
+
+.missao {
+    background-color: #00745a;
+    color: white;
+    padding: 4rem 6rem;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    &_text {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+
+    &_cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &_card {
+        border: solid 2px white;
+        width: 27vw;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border-radius: 12px;
+        padding: 0 3rem;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+.impacto {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 5rem;
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    &_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        background-color: white;
+        color: black;
+    }
+
+    &_card {
+        border-radius: 12px;
+        border: solid 2px black;
+        width: 20vw;
+        height: 30vh;
+        flex-wrap: wrap;
+        padding: 2.5rem;
+
+
+        h3 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #000000;
+            padding: 1.5rem;
+            color: #00745a;
+        }
+    }
+}
+@media (max-width: 760px) {
+    .missao_cards, .impacto_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .missao_card, .impacto_card {
+        width: 60vw;
+    }
+}

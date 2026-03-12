@@ -1,4 +1,4 @@
-import S from "./Home.module.scss";
+import S from "./home.module.scss";
 import Saude from "../../assets/Saude.png";
 import Medico from "../../assets/medico.png";
 import { Link } from "react-router-dom";

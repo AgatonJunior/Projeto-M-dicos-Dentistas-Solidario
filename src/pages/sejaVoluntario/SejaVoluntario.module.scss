@@ -16,7 +16,7 @@ $backgroundcolor-form: #f0f0f0;
   }
 }
 
-.Beneficios {
+.beneficios {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
@@ -52,7 +52,7 @@ form {
   width: 1200px;
 }
 
-.FormLabel {
+.formLabel {
   padding: 40px 0;
   display: flex;
   justify-content: center;
@@ -138,7 +138,7 @@ form {
 
 @media (max-width: 1000px) {
 
-  .Beneficios {
+  .beneficios {
     gap: 15px;
     flex-direction: column;
     align-items: center;
@@ -149,7 +149,7 @@ form {
   
   }
 
-  .FormLabel form {
+  .formLabel form {
     width: 90vw;
 
   }
@@ -189,11 +189,11 @@ form {
 
 
 
-  .FormLabel {
+  .formLabel {
     padding: 20px 0;
   }
 
-  .FormLabel form {
+  .formLabel form {
     width: 90%;
     padding: 20px;
   }
